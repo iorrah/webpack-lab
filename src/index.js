@@ -1,5 +1,6 @@
-import ReactDOM from "react-dom";
-import App from "./App.jsx";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
 
-const domContainer = document.querySelector("#react-app");
-ReactDOM.render(e(App), domContainer);
+const domContainer = document.querySelector('#react-app');
+domContainer ? ReactDOM.render(<App />, domContainer) : false;
